@@ -137,8 +137,8 @@ const projects = {
     url: "https://github.com/divyanshvermagit/Ola-Ride-Performance-Analytics",
     tools: ["SQL", "Python", "Power BI"],
     images: [
-      "assets/img/portfolio/ola-1.jpg",
-      "assets/img/portfolio/ola-2.webp",
+      "assets/img/portfolio/olaimg-1.jpg",
+      "assets/img/portfolio/olaimg-2.webp",
     ],
     overview: [
       "Analyzed ride demand, cancellations, and revenue trends across cities.",
