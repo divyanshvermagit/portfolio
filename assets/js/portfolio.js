@@ -324,7 +324,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     item.innerHTML = `
       <div class="portfolio-wrap">
-        <img src="${project.images[0]}" class="img-fluid" alt="${project.title}">
+      <img src="${project.images[0]}" class="img-fluid" alt="${project.title}" loading="lazy"
+     onerror="this.src='assets/img/portfolio/portfolio-7.webp'">
         <div class="portfolio-info">
           <div class="content">
             <span class="category">${project.category}</span>
