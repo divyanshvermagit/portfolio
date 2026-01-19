@@ -1373,6 +1373,190 @@ section,
   }
 }
 
+/* ================================
+   Skill Cards (Languages / Tech)
+================================ */
+
+/* Card wrapper */
+.skill-card {
+  height: 75px;
+  border-radius: 14px;
+  padding: 12px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  /* Theme-submerged surface */
+  background: color-mix(in srgb, var(--surface-color), white 4%);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
+
+  /* Premium soft shadow */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.09);
+
+  cursor: default;
+
+  /* Scroll animation (initial) */
+  opacity: 0;
+  transform: translateY(18px) scale(0.97);
+
+  transition:
+    opacity 0.6s cubic-bezier(0.215, 0.61, 0.355, 1),
+    transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1),
+    box-shadow 0.45s ease,
+    background-color 0.45s ease,
+    border-color 0.45s ease;
+}
+
+/* AOS triggered state */
+.skill-card.aos-animate {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Hover lift */
+.skill-card:hover {
+  transform: translateY(-6px) scale(1);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.14);
+}
+
+/* ================================
+   Icon Styling
+================================ */
+.skill-card i {
+  font-size: 25px;
+  line-height: 1;
+  opacity: 0.9;
+
+  transition:
+    opacity 0.4s ease,
+    transform 0.4s ease;
+}
+
+.skill-card:hover i {
+  /* opacity: 1; */
+  transform: scale(1.08);
+  filter: drop-shadow(0 0 8px currentColor);
+}
+
+/* ================================
+   Skill Name
+================================ */
+.skill-card span {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--default-color);
+  letter-spacing: 0.3px;
+}
+
+/* ================================
+   Subtle Color Themes (Muted)
+================================ */
+
+/* JavaScript */
+.skill-js {
+  --skill-color: rgba(240, 219, 79, 0.833);
+}
+.skill-js:hover {
+  background: linear-gradient(
+    135deg,
+    var(--skill-color),
+    transparent
+  );
+}
+
+/* React */
+.skill-react {
+  --skill-color: rgba(97, 219, 251, 0.833);
+}
+.skill-react:hover {
+  background: linear-gradient(
+    135deg,
+    var(--skill-color),
+    transparent
+  );
+}
+
+/* HTML */
+.skill-html {
+  --skill-color: rgba(227, 76, 38, 0.833);
+}
+.skill-html:hover {
+  background: linear-gradient(
+    135deg,
+    var(--skill-color),
+    transparent
+  );
+}
+
+/* CSS */
+.skill-css {
+  --skill-color: rgba(102, 51, 153, 0.833);
+}
+.skill-css:hover {
+  background: linear-gradient(
+    135deg,
+    var(--skill-color),
+    transparent
+  );
+}
+
+/* Python */
+.skill-python {
+  --skill-color: rgba(98, 151, 188, 0.833);
+}
+.skill-python:hover {
+  background: linear-gradient(
+    135deg,
+    var(--skill-color),
+    transparent
+  );
+}
+
+/* SQL */
+.skill-sql {
+  --skill-color: rgba(25, 64, 241, 0.833);
+}
+.skill-sql:hover {
+  background: linear-gradient(
+    135deg,
+    var(--skill-color),
+    transparent
+  );
+}
+
+/* c++ */
+.skill-cpp {
+  --skill-color: rgba(85, 153, 255, 0.833);
+}
+.skill-cpp:hover {
+  background: linear-gradient(
+    135deg,
+    var(--skill-color),
+    transparent
+  );
+}
+/* ================================
+   Mobile Optimization
+================================ */
+@media (max-width: 576px) {
+  .skill-card {
+    height: 96px;
+    padding: 14px;
+  }
+
+  .skill-card i {
+    font-size: 24px;
+  }
+
+  .skill-card span {
+    font-size: 13px;
+  }
+}
+
+
 /*--------------------------------------------------------------
 # Resume Section
 --------------------------------------------------------------*/
