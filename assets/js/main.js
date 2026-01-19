@@ -189,7 +189,7 @@
   /**
    * Correct scrolling position upon page load for URLs containing hash links.
    */
-  window.addEventListener('load', function(e) {
+  window.addEventListener("load", function (e) {
     if (window.location.hash) {
       if (document.querySelector(window.location.hash)) {
         setTimeout(() => {
@@ -197,10 +197,60 @@
           let scrollMarginTop = getComputedStyle(section).scrollMarginTop;
           window.scrollTo({
             top: section.offsetTop - parseInt(scrollMarginTop),
-            behavior: 'smooth'
+            behavior: "smooth",
           });
         }, 100);
       }
+    }
+  });
+
+  /**
+   * contact forms working
+   */
+  const form = document.getElementById("contactForm");
+  const submitBtn = document.getElementById("submitBtn");
+  const btnText = document.getElementById("btnText");
+  const spinner = document.getElementById("spinner");
+  const formMessage = document.getElementById("formMessage");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    // Disable button + show spinner
+    submitBtn.disabled = true;
+    btnText.style.display = "none";
+    spinner.style.display = "inline-block";
+    formMessage.innerText = "";
+
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (response.ok) {
+        formMessage.innerText = "Your message has been sent. Thank you!";
+        formMessage.className = "success";
+        form.reset();
+      } else {
+        const data = await response.json();
+        formMessage.innerText =
+          data?.errors?.[0]?.message || "Oops! Something went wrong.";
+        formMessage.className = "error";
+      }
+    } catch (err) {
+      formMessage.innerText = "Network error. Please try again later.";
+      formMessage.className = "error";
+    } finally {
+      // Re-enable button + hide spinner
+      submitBtn.disabled = false;
+      btnText.style.display = "inline";
+      spinner.style.display = "none";
     }
   });
 

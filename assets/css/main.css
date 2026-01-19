@@ -2750,6 +2750,27 @@ section,
 }
 
 /*--------------------------------------------------------------
+# contact Forms Section
+--------------------------------------------------------------*/
+#spinner {
+  margin-left: 8px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg);}
+  100% { transform: rotate(360deg);}
+}
+
+#formMessage.success {
+  color: #28a745;
+}
+
+#formMessage.error {
+  color: #dc3545;
+}
+
+/*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
 .starter-section {
