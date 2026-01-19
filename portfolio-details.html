@@ -345,9 +345,19 @@ project.highlights.forEach((item, index) => {
   highlightsEl.appendChild(col);
 });
 
+// Business Impact
+const impactEl = document.getElementById("project-impact");
+impactEl.innerHTML = "";
 
-  // Impact
-  document.getElementById("project-impact").innerText = project.impact;
+project.impact.forEach((text, index) => {
+  const p = document.createElement("p");
+  p.innerText = text;
+  p.setAttribute("data-aos", "fade-up");
+  p.setAttribute("data-aos-delay", 300 + index * 100);
+  impactEl.appendChild(p);
+});
+
+ 
 </script>
 
 

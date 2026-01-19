@@ -331,13 +331,13 @@ document.addEventListener("DOMContentLoaded", () => {
             <span class="category">${project.category}</span>
             <h4>${project.title}</h4>
             <div class="portfolio-links">
+             <a href="${project.images[1]}" class="glightbox" data-gallery="project-${id}">
+                <i class="bi bi-plus-lg"></i>
+              </a>
               <a href="portfolio-details.html?id=${id}" title="More Details">
                 <i class="bi bi-arrow-right"></i>
               </a>
-              <a href="${project.images[1]}" class="glightbox" data-gallery="project-${id}">
-                <i class="bi bi-plus-lg"></i>
-              </a>
-            </div>
+              </div>
           </div>
         </div>
       </div>
