@@ -140,6 +140,52 @@ const projects = {
     ],
   },
 
+  // Custom folder icon pack
+"Pexelicons-Master": {
+  title: "Pexelicons Master",
+  category: "UI & UX Design",
+  type: "design", // or development or data
+  date: "Sep 2024",
+  url: "https://github.com/divyanshvermagit/Pexelicons-Master",
+  tools: ["Figma", "Illustrator", "Windows Icon Format (ICO)", "javaScript", "HTML", "CSS"],
+  images: [
+    "assets/img/portfolio/px-1.jpg",
+    "assets/img/portfolio/px-2.png"
+  ],
+  overview: [
+    "Pexellicons Master is a custom folder icon pack designed to enhance desktop organization through clean, modern, and visually consistent icons.",
+    "The project focuses on improving usability and aesthetics by replacing default system icons with purpose-driven visual cues.",
+    "Each icon is crafted with clarity, minimalism, and scalability in mind to suit both personal and professional workflows."
+  ],
+  highlights: [
+    {
+      icon: "bi-folder-fill",
+      title: "Custom Folder Icon System",
+      desc: "Designed a complete set of custom folder icons to visually differentiate files and improve quick recognition."
+    },
+    {
+      icon: "bi-brush",
+      title: "Modern & Minimal Visual Style",
+      desc: "Applied clean shapes, balanced colors, and consistent design principles for a polished desktop experience."
+    },
+    {
+      icon: "bi-sliders",
+      title: "Highly Customizable Pack",
+      desc: "Created multiple icon variations allowing users to personalize folders based on categories or workflows."
+    },
+    {
+      icon: "bi-display",
+      title: "Optimized for Desktop Use",
+      desc: "Exported icons in high-quality formats to ensure sharp visuals across different screen resolutions."
+    }
+  ],
+  impact: [
+    "Improved desktop organization and productivity through visually distinct folder categorization.",
+    "Showcased strong visual design skills with attention to detail, consistency, and usability.",
+    "Demonstrated the ability to design practical digital assets that enhance everyday user workflows."
+  ]
+},
+
   // Travel agency ui design
   "Dream-Destination": {
     title: "Dream Destination Website",
