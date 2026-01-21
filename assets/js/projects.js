@@ -48,6 +48,54 @@ const projects = {
     ],
   },
 
+ // Sentiment Analysis
+"Sentiment-Analysis": {
+  title: "Sentiment Analysis",
+  category: "Data Analytics, NLP & Machine Learning",
+  type: "data", // or development or design
+  date: "Nov 2025",
+  url: "https://github.com/divyanshvermagit/Sentiment-Analysis",
+  tools: ["Python", "NLP", "Machine Learning", "Scikit-learn"],
+  images: [
+    "assets/img/portfolio/sa-1.png",
+    "assets/img/portfolio/sa-2.jpg",
+  ],
+  overview: [
+    "Sentiment Analysis is an end-to-end NLP and Machine Learning project focused on extracting sentiment from unstructured text data.",
+    "The project involved text preprocessing, feature engineering, and supervised model training to classify sentiments as positive, negative, or neutral.",
+    "The insights generated help businesses understand customer opinions, feedback trends, and brand perception.",
+  ],
+  highlights: [
+    {
+      icon: "bi-file-text",
+      title: "Text Preprocessing",
+      desc: "Performed tokenization, stopword removal, lemmatization, and noise reduction using Python NLP techniques.",
+    },
+    {
+      icon: "bi-cpu",
+      title: "Feature Engineering",
+      desc: "Converted text into numerical features using TF-IDF and Bag-of-Words models.",
+    },
+    {
+      icon: "bi-graph-up",
+      title: "Model Training & Evaluation",
+      desc: "Trained and evaluated machine learning models to achieve high accuracy and balanced precision-recall scores.",
+    },
+    {
+      icon: "bi-bar-chart",
+      title: "Insight Generation",
+      desc: "Analyzed sentiment distribution and trends to extract actionable insights from textual data.",
+    },
+  ],
+  impact: [
+    "Achieved ~85–90% sentiment classification accuracy, improving the reliability of automated opinion analysis.",
+    "Reduced manual sentiment tagging effort by ~60–70% through automated text classification.",
+    "Enabled faster identification of negative feedback, helping prioritize customer issues and improve response time by ~30%.",
+    "Provided data-driven insights into customer sentiment trends, supporting product improvement and marketing strategies.",
+    "Created a scalable sentiment analysis pipeline that can be extended to real-time customer reviews and social media data.",
+  ],
+},
+
   // Ola-Ride-Performance-Analytics
   "ola-ride-analysis": {
     title: "OLA Ride Performance Analysis",
@@ -149,8 +197,8 @@ const projects = {
   url: "https://github.com/divyanshvermagit/Pexelicons-Master",
   tools: ["Figma", "Illustrator", "Windows Icon Format (ICO)", "javaScript", "HTML", "CSS"],
   images: [
-    "assets/img/portfolio/px-1.jpg",
-    "assets/img/portfolio/px-2.png"
+    "assets/img/portfolio/pm-1.jpg",
+    "assets/img/portfolio/pm-2.webp"
   ],
   overview: [
     "Pexellicons Master is a custom folder icon pack designed to enhance desktop organization through clean, modern, and visually consistent icons.",
