@@ -1,4 +1,52 @@
 const projects = {
+  // Big-Tech-Stock-Market-Analysis
+"StockMarket-Tableau": {
+  title: "Stock Market Analysis",
+  category: "Data Analytics & Dashboarding",
+  type: "data", // or development or design
+  date: "Jan 2026",
+  url: "https://github.com/divyanshvermagit/StockMarket-Tableau",
+  tools: ["Python", "Pandas", "Jupyter Notebook", "Tableau"],
+  images: [
+    "assets/img/portfolio/sm-1.webp",
+    "assets/img/portfolio/sm-2.png",
+  ],
+  overview: [
+    "This project analyzes stock price movements of major technology companies to understand market trends, volatility, and performance patterns.",
+    "Exploratory Data Analysis (EDA) was conducted using Python and Pandas in Jupyter Notebook to clean, transform, and analyze historical stock data.",
+    "Insights from EDA were visualized through interactive Tableau dashboards to support data-driven financial analysis.",
+  ],
+  highlights: [
+    {
+      icon: "bi-bar-chart-line",
+      title: "Exploratory Data Analysis",
+      desc: "Performed data cleaning, preprocessing, and time-series analysis using Pandas.",
+    },
+    {
+      icon: "bi-graph-up-arrow",
+      title: "Price Movement Analysis",
+      desc: "Analyzed daily price changes, gains/losses, and overall stock trends.",
+    },
+    {
+      icon: "bi-activity",
+      title: "Volatility & Volume Analysis",
+      desc: "Identified high-volatility periods and analyzed trading volume patterns.",
+    },
+    {
+      icon: "bi-pie-chart",
+      title: "Interactive Dashboarding",
+      desc: "Built Tableau dashboards for company-wise comparison and trend exploration.",
+    },
+  ],
+  impact: [
+    "Analyzed price trends and volatility of major tech stocks to identify growth and risk patterns across different market phases.",
+    "Compared performance of big tech companies(Apple, Google, facebook, Nvidia, Tesla, Twitter), enabling clearer insights into relative stock behavior and stability.",
+    "Identified high-volume and high-volatility periods, supporting better understanding of market reactions to price movements.",
+    "Delivered interactive Tableau dashboards that simplified complex financial data and improved insight accessibility for stakeholders.",
+    "Demonstrated an end-to-end analytics workflow, strengthening practical skills in financial data analysis and visualization.",
+  ],
+},
+
   // Retail-Customer-Behaviour-Analysis
   "customer-pulse": {
     title: "Retail Customer Behaviour Analytics",
