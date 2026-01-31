@@ -371,6 +371,14 @@ h6 {
   text-align: center;
 }
 
+.footer-icon {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin-bottom: 6px;
+  opacity: 0.9;
+}
+
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
