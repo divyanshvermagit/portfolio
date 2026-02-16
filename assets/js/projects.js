@@ -1,4 +1,54 @@
 const projects = {
+    // Vendor-Performance-Analysis
+"Vendor-Performance": {
+  title: "Vendor Performance Analysis",
+  category: "Data Analytics",
+  type: "data", // or development or design
+  date: "Feb 2026",
+  url: "https://github.com/divyanshvermagit/Vendor_Performance",
+  tools: ["Python", "Pandas", "SQL", "SQLite", "Jupyter Notebook", "Power BI"],
+  images: [
+    "assets/img/portfolio/vp-1.webp",
+    "assets/img/portfolio/vp-2.png",
+  ],
+  overview: [
+    "This project analyzes vendor performance, inventory efficiency, and sales trends to optimize profitability in retail and wholesale operations.",
+    "Exploratory Data Analysis (EDA) was conducted using Python and Pandas to clean, transform, and analyze sales, inventory, and purchase data from multiple relational tables.",
+    "Insights were visualized using Power BI dashboards to evaluate vendor contribution, pricing efficiency, and inventory turnover for data-driven business decisions.",
+  ],
+  highlights: [
+    {
+      icon: "bi-bar-chart-line",
+      title: "Vendor Performance Analysis",
+      desc: "Evaluated vendor contribution to total sales, gross profit, and overall business performance.",
+    },
+    {
+      icon: "bi-graph-up-arrow",
+      title: "Inventory Turnover Analysis",
+      desc: "Analyzed inventory flow using beginning and ending stock data to identify inefficiencies and reduce holding costs.",
+    },
+    {
+      icon: "bi-currency-dollar",
+      title: "Bulk Purchase & Pricing Analysis",
+      desc: "Examined the impact of bulk purchasing on unit costs and pricing efficiency across vendors.",
+    },
+    {
+      icon: "bi-pie-chart",
+      title: "Interactive Dashboarding",
+      desc: "Built Power BI dashboards to compare vendor performance, profitability, and sales trends.",
+    },
+  ],
+  impact: [
+    "Identified underperforming brands requiring pricing or promotional adjustments to improve sales performance.",
+    "Determined top vendors contributing to revenue and gross profit, enabling better vendor selection decisions.",
+    "Analyzed the relationship between bulk purchasing and cost reduction to optimize procurement strategies.",
+    "Evaluated inventory turnover to highlight stock management inefficiencies and reduce holding costs.",
+    "Delivered data-driven insights through dashboards, improving business decision-making and operational efficiency.",
+    "Demonstrated an end-to-end analytics workflow including data ingestion, cleaning, analysis, and visualization.",
+  ],
+},
+
+
   // Big-Tech-Stock-Market-Analysis
 "StockMarket-Tableau": {
   title: "Stock Market Analysis",
